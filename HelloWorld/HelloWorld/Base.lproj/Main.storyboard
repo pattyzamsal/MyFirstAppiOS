@@ -67,15 +67,15 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="V6t-da-OAu" secondAttribute="trailing" constant="-8" id="0G4-nr-Xgi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pMh-ah-F8O" secondAttribute="trailing" constant="-8" id="0lt-Qc-gpV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LWK-I4-HAg" secondAttribute="bottom" constant="260" id="2Si-FV-Eq5"/>
                             <constraint firstItem="rN4-hB-dOn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6eq-2p-GSV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pMh-ah-F8O" secondAttribute="bottom" constant="360" id="9fl-Ow-CcU"/>
                             <constraint firstItem="pMh-ah-F8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E6f-OW-8M7"/>
                             <constraint firstItem="V6t-da-OAu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="KE9-LQ-eCN"/>
                             <constraint firstItem="V6t-da-OAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QYj-ZQ-thO"/>
+                            <constraint firstItem="LWK-I4-HAg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="315" id="TEs-nO-Nry"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LWK-I4-HAg" secondAttribute="trailing" constant="-8" id="aq4-j1-ZpE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rN4-hB-dOn" secondAttribute="trailing" constant="-8" id="dFr-3n-Mha"/>
                             <constraint firstItem="LWK-I4-HAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ede-ky-B9D"/>
+                            <constraint firstItem="pMh-ah-F8O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="215" id="hHR-ge-REX"/>
                             <constraint firstItem="rN4-hB-dOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xxX-56-pAP"/>
                         </constraints>
                     </view>

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,9 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN4-hB-dOn">
-                                <rect key="frame" x="7" y="20" width="360" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN4-hB-dOn">
+                                <rect key="frame" x="8" y="40" width="359" height="72"/>
                                 <color key="backgroundColor" red="0.10677981126290637" green="0.57388373115019164" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="tintColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,9 +32,8 @@
                                     <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfy-NG-RyT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMh-ah-F8O">
-                                <rect key="frame" x="7" y="271" width="360" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMh-ah-F8O">
+                                <rect key="frame" x="8" y="235" width="359" height="72"/>
                                 <color key="backgroundColor" red="0.1067798113" green="0.57388373120000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="tintColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,9 +42,8 @@
                                     <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="7SO-II-8JI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6t-da-OAu">
-                                <rect key="frame" x="7" y="146" width="360" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6t-da-OAu">
+                                <rect key="frame" x="8" y="140" width="359" height="72"/>
                                 <color key="backgroundColor" red="0.30953980878498621" green="0.83063458332933782" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="tintColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,9 +52,8 @@
                                     <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="pcp-6I-IEI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWK-I4-HAg">
-                                <rect key="frame" x="7" y="399" width="360" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWK-I4-HAg">
+                                <rect key="frame" x="8" y="335" width="359" height="72"/>
                                 <color key="backgroundColor" red="0.30897802114486694" green="0.83068305253982544" blue="0.99993759393692017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="tintColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,6 +64,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="V6t-da-OAu" secondAttribute="trailing" constant="-8" id="0G4-nr-Xgi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pMh-ah-F8O" secondAttribute="trailing" constant="-8" id="0lt-Qc-gpV"/>
+                            <constraint firstItem="rN4-hB-dOn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6eq-2p-GSV"/>
+                            <constraint firstItem="pMh-ah-F8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E6f-OW-8M7"/>
+                            <constraint firstItem="V6t-da-OAu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="KE9-LQ-eCN"/>
+                            <constraint firstItem="V6t-da-OAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QYj-ZQ-thO"/>
+                            <constraint firstItem="LWK-I4-HAg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="315" id="TEs-nO-Nry"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LWK-I4-HAg" secondAttribute="trailing" constant="-8" id="aq4-j1-ZpE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rN4-hB-dOn" secondAttribute="trailing" constant="-8" id="dFr-3n-Mha"/>
+                            <constraint firstItem="LWK-I4-HAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ede-ky-B9D"/>
+                            <constraint firstItem="pMh-ah-F8O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="215" id="hHR-ge-REX"/>
+                            <constraint firstItem="rN4-hB-dOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xxX-56-pAP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

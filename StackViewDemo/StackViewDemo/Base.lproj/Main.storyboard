@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DHs-eA-2SC">
-                                <rect key="frame" x="16" y="90" width="343" height="228.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DHs-eA-2SC">
+                                <rect key="frame" x="16" y="90" width="343" height="289.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-Qe-rX6">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="68.5"/>
@@ -44,7 +44,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fjw-bH-AzU">
-                                        <rect key="frame" x="0.0" y="88.5" width="343" height="140"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="343" height="140"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="HZi-Ma-It0">
                                                 <rect key="frame" x="0.0" y="0.0" width="107.5" height="140"/>
@@ -60,6 +60,14 @@
                                             <constraint firstAttribute="width" secondItem="Fjw-bH-AzU" secondAttribute="height" multiplier="49:20" id="29x-nm-lWx"/>
                                         </constraints>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnE-wn-kRX">
+                                        <rect key="frame" x="0.0" y="228.5" width="343" height="61"/>
+                                        <string key="text">Need help with your coding problems? 
+ We’ll find you the right developer who can help you in 15 minutes</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>

@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DHs-eA-2SC">
-                                <rect key="frame" x="16" y="90" width="343" height="289.5"/>
+                                <rect key="frame" x="16" y="90" width="343" height="282.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-Qe-rX6">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="68.5"/>
@@ -60,8 +60,8 @@
                                             <constraint firstAttribute="width" secondItem="Fjw-bH-AzU" secondAttribute="height" multiplier="49:20" id="29x-nm-lWx"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnE-wn-kRX">
-                                        <rect key="frame" x="0.0" y="228.5" width="343" height="61"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnE-wn-kRX" userLabel="Need help with your coding problems?   We’ll find you the right developer who can help you in 15 minutes">
+                                        <rect key="frame" x="0.0" y="228.5" width="343" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="zIV-eL-WlL"/>
                                         </constraints>
@@ -80,32 +80,33 @@
                                                 <include reference="zIV-eL-WlL"/>
                                             </mask>
                                         </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        </variation>
                                     </label>
                                 </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9be-Ju-W8T">
-                                <rect key="frame" x="87.5" y="577" width="200" height="70"/>
+                                <rect key="frame" x="37.5" y="577" width="300" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dX-LA-A0c">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.99944549798965454" green="0.46565514802932739" blue="0.31979858875274658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-PX-HLj">
-                                        <rect key="frame" x="0.0" y="40" width="200" height="30"/>
+                                        <rect key="frame" x="0.0" y="40" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.99944549800000004" green="0.46565514800000002" blue="0.31979858880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="kOB-OT-GLA"/>
-                                        </constraints>
                                         <state key="normal" title="Sign up with Facebook">
                                             <color key="titleColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="pfR-5x-otk"/>
+                                    <constraint firstAttribute="width" constant="300" id="pfR-5x-otk"/>
                                 </constraints>
                             </stackView>
                         </subviews>

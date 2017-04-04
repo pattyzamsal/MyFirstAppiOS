@@ -22,6 +22,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
 
+    // Hide the status bar
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     /*
      *  UITableViewDataSource
      */

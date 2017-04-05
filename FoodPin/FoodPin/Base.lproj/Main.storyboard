@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="Qg2-fN-YIj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="Qg2-fN-YIj" customClass="RestaurantTableViewCell" customModule="FoodPin" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qg2-fN-YIj" id="qiL-Ny-8ss">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-QA-eKr">
@@ -69,6 +69,12 @@
                                         <constraint firstItem="Fxv-QA-eKr" firstAttribute="leading" secondItem="qiL-Ny-8ss" secondAttribute="leadingMargin" constant="6" id="sxH-Xi-ewL"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationLabel" destination="KwX-gR-pdF" id="NKR-sH-jyR"/>
+                                    <outlet property="nameLabel" destination="lpW-Nx-mjT" id="jfo-3t-Mle"/>
+                                    <outlet property="thumbnailImageView" destination="Vc9-ta-RjZ" id="Wfb-7P-JUd"/>
+                                    <outlet property="typeLabel" destination="Kmf-VE-weE" id="gmV-Xz-5rP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

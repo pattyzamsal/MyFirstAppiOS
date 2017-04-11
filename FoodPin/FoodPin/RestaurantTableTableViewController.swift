@@ -67,8 +67,10 @@ class RestaurantTableTableViewController: UITableViewController {
         let shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Share", handler: {
             (action, indexPath) -> Void in
             let defaultText = "Just checking in at " + self.restaurantNames[indexPath.row]
-            let activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
-            self.present(activityController, animated: true, completion: nil)
+            if let imageToShare = UIImage(named: self.restaurantImages[indexPath.row]) {
+                let activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
+                self.present(activityController, animated: true, completion: nil)
+            }
         })
         // Delete button 
         let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Delete", handler: {
@@ -79,6 +81,7 @@ class RestaurantTableTableViewController: UITableViewController {
             self.restaurantTypes.remove(at: indexPath.row)
             self.restaurantIsVisited.remove(at: indexPath.row)
             self.restaurantImages.remove(at: indexPath.row)
+            
             self.tableView.deleteRows(at: [indexPath], with: .fade)
         })
         return [deleteAction, shareAction]

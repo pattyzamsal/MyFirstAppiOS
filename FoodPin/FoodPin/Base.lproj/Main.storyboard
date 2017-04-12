@@ -79,6 +79,7 @@
                                     <outlet property="nameLabel" destination="lpW-Nx-mjT" id="jfo-3t-Mle"/>
                                     <outlet property="thumbnailImageView" destination="Vc9-ta-RjZ" id="Wfb-7P-JUd"/>
                                     <outlet property="typeLabel" destination="Kmf-VE-weE" id="gmV-Xz-5rP"/>
+                                    <segue destination="HTt-y9-CJ0" kind="show" id="vkU-ga-jtQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

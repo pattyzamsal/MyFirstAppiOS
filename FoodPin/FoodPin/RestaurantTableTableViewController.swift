@@ -117,7 +117,7 @@ class RestaurantTableTableViewController: UITableViewController {
     
     // MARK: - Table view delegate
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Create an option menu as an action sheet 
         let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
         // Add actions to the menu 
@@ -165,8 +165,8 @@ class RestaurantTableTableViewController: UITableViewController {
         present(optionMenu, animated: true, completion: nil)
         
         tableView.deselectRow(at: indexPath, animated: false)
-    }
-        
+    }*/
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

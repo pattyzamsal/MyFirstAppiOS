@@ -119,7 +119,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="RestaurantImageView" destination="tu4-Ee-rOA" id="aSi-qi-dXe"/>
+                        <outlet property="restaurantImageView" destination="tu4-Ee-rOA" id="H74-xr-gj4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmZ-Db-EAd" userLabel="First Responder" sceneMemberID="firstResponder"/>

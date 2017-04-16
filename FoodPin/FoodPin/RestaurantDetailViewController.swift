@@ -10,7 +10,7 @@ import UIKit
 
 class RestaurantDetailViewController: UIViewController {
 
-    @IBOutlet weak var RestaurantImageView: UIImageView!
+    @IBOutlet weak var restaurantImageView: UIImageView!
     var restaurantImage = ""
     
     override func viewDidLoad() {

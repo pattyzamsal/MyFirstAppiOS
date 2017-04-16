@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:barFont]
         }
+        // change the color of the status bar
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 

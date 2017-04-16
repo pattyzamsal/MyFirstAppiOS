@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Customize the navigation bar
         UINavigationBar.appearance().barTintColor = UIColor(red: 216.0/255.0, green: 74.0/255.0, blue: 32.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.white
-        if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
+        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 24.0) {
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:barFont]
         }
         // change the color of the status bar

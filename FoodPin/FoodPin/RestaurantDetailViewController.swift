@@ -10,6 +10,7 @@ import UIKit
 
 class RestaurantDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var restaurantImageView: UIImageView!
     
     var restaurant: Restaurant!
@@ -19,6 +20,9 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
 
         // Do any additional setup after loading the view.
         restaurantImageView.image = UIImage(named: restaurant.image)
+        tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.8)
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +53,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I've been here before" : "No" default: cell.fieldLabel.text = ""
             cell.valueLabel.text = ""
         }
+        cell.backgroundColor = UIColor.clear
         return cell
     }
         

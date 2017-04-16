@@ -51,7 +51,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-gR-pdF">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-gR-pdF">
                                                             <rect key="frame" x="0.0" y="21.5" width="55" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,7 +71,7 @@
                                     <constraints>
                                         <constraint firstItem="Fxv-QA-eKr" firstAttribute="top" secondItem="qiL-Ny-8ss" secondAttribute="topMargin" constant="2" id="0tI-Su-hRy"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Fxv-QA-eKr" secondAttribute="trailing" id="PYl-R8-x0F"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Fxv-QA-eKr" secondAttribute="bottom" constant="1.5" id="kA7-d5-iJO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Fxv-QA-eKr" secondAttribute="bottom" constant="2" id="kA7-d5-iJO"/>
                                         <constraint firstItem="Fxv-QA-eKr" firstAttribute="leading" secondItem="qiL-Ny-8ss" secondAttribute="leadingMargin" constant="6" id="sxH-Xi-ewL"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -131,7 +131,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZJ-vX-QDn">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZJ-vX-QDn">
                                                             <rect key="frame" x="110" y="0.0" width="220" height="21.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -145,7 +145,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="82J-GI-w8c" firstAttribute="leading" secondItem="Dnq-Se-KGb" secondAttribute="leadingMargin" constant="29" id="0jO-TV-bmK"/>
+                                                <constraint firstAttribute="bottom" secondItem="82J-GI-w8c" secondAttribute="bottom" constant="7" id="Lee-cA-7oc"/>
                                                 <constraint firstItem="82J-GI-w8c" firstAttribute="centerY" secondItem="Dnq-Se-KGb" secondAttribute="centerY" id="V5U-jD-ror"/>
+                                                <constraint firstItem="82J-GI-w8c" firstAttribute="top" secondItem="Dnq-Se-KGb" secondAttribute="top" constant="7" id="ewQ-fy-XKQ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="82J-GI-w8c" secondAttribute="trailing" id="k2m-lb-bpX"/>
                                             </constraints>
                                         </tableViewCellContentView>

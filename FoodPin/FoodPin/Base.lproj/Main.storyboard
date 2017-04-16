@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="976.79999999999995" y="89.505247376311857"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Detail View Controller-->
         <scene sceneID="Jhb-nw-cNX">
             <objects>
-                <viewController id="HTt-y9-CJ0" sceneMemberID="viewController">
+                <viewController id="HTt-y9-CJ0" customClass="RestaurantDetailViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M7l-w8-Ncb"/>
                         <viewControllerLayoutGuide type="bottom" id="XsA-9v-Jwg"/>
@@ -118,6 +118,9 @@
                             <constraint firstItem="XsA-9v-Jwg" firstAttribute="top" secondItem="tu4-Ee-rOA" secondAttribute="bottom" id="zOb-Yg-yZZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="RestaurantImageView" destination="tu4-Ee-rOA" id="aSi-qi-dXe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmZ-Db-EAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

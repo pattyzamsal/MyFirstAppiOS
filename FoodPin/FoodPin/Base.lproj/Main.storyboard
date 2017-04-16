@@ -145,7 +145,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="82J-GI-w8c" firstAttribute="leading" secondItem="Dnq-Se-KGb" secondAttribute="leadingMargin" constant="29" id="0jO-TV-bmK"/>
+                                                <constraint firstAttribute="bottom" secondItem="82J-GI-w8c" secondAttribute="bottom" constant="7" id="Lee-cA-7oc"/>
                                                 <constraint firstItem="82J-GI-w8c" firstAttribute="centerY" secondItem="Dnq-Se-KGb" secondAttribute="centerY" id="V5U-jD-ror"/>
+                                                <constraint firstItem="82J-GI-w8c" firstAttribute="top" secondItem="Dnq-Se-KGb" secondAttribute="top" constant="7" id="ewQ-fy-XKQ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="82J-GI-w8c" secondAttribute="trailing" id="k2m-lb-bpX"/>
                                             </constraints>
                                         </tableViewCellContentView>

@@ -45,7 +45,13 @@ class RestaurantTableTableViewController: UITableViewController {
         Restaurant(name: "Royal Oak", type: "British", location: "London", image: "royaloak.jpg", isVisited: false),
         Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "London", image: "caskpubkitchen.jpg", isVisited: false)
     ]
-        
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // hide the navigation bar when the user scroll down
+        navigationController?.hidesBarsOnSwipe = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

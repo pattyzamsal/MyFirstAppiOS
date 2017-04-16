@@ -15,6 +15,13 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     
     var restaurant: Restaurant!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Doesn't allow that be hide the navigation bar
+        navigationController?.hidesBarsOnSwipe = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

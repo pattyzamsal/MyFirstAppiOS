@@ -224,11 +224,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pcm-EC-IX9">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pcm-EC-IX9">
                                         <rect key="frame" x="8" y="287.5" width="253" height="122.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctx-AZ-iHf">
-                                                <rect key="frame" x="63.5" y="0.0" width="126" height="37.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="253" height="37.5"/>
                                                 <color key="backgroundColor" red="1" green="0.058858420478107853" blue="0.049921352870142877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                 <state key="normal" title="Absolutely love it!">
@@ -236,7 +236,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9W-t4-hcA">
-                                                <rect key="frame" x="106.5" y="42.5" width="40" height="37.5"/>
+                                                <rect key="frame" x="0.0" y="42.5" width="253" height="37.5"/>
                                                 <color key="backgroundColor" red="1" green="0.058858420478107853" blue="0.049921352870142877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                 <state key="normal" title="Good">
@@ -244,7 +244,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qto-Fc-O7e">
-                                                <rect key="frame" x="84" y="85" width="85" height="37.5"/>
+                                                <rect key="frame" x="0.0" y="85" width="253" height="37.5"/>
                                                 <color key="backgroundColor" red="1" green="0.058858420478107853" blue="0.049921352870142877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                 <state key="normal" title="I don't like it">
@@ -253,11 +253,20 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G43-z8-Iiu">
+                                        <rect key="frame" x="253" y="-13" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="5du-iW-XK2"/>
+                                            <constraint firstAttribute="width" constant="28" id="cEG-Bk-0yy"/>
+                                        </constraints>
+                                        <state key="normal" image="cross"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="420" id="00f-BH-h1U"/>
                                     <constraint firstAttribute="trailing" secondItem="tWB-xa-DfY" secondAttribute="trailing" id="3ao-uI-QnT"/>
+                                    <constraint firstItem="G43-z8-Iiu" firstAttribute="top" secondItem="OPg-JW-JZ5" secondAttribute="top" constant="-13" id="9Qf-i5-gMn"/>
                                     <constraint firstItem="tWB-xa-DfY" firstAttribute="leading" secondItem="OPg-JW-JZ5" secondAttribute="leading" id="E6Z-pq-tHQ"/>
                                     <constraint firstItem="4WZ-oF-wg6" firstAttribute="top" secondItem="tWB-xa-DfY" secondAttribute="bottom" constant="8" id="F8A-3a-wNw"/>
                                     <constraint firstItem="pcm-EC-IX9" firstAttribute="top" secondItem="4WZ-oF-wg6" secondAttribute="bottom" constant="15" id="QdH-pi-TFZ"/>
@@ -267,6 +276,7 @@
                                     <constraint firstAttribute="trailing" secondItem="4WZ-oF-wg6" secondAttribute="trailing" constant="15" id="tnj-gL-d4m"/>
                                     <constraint firstItem="4WZ-oF-wg6" firstAttribute="leading" secondItem="OPg-JW-JZ5" secondAttribute="leading" constant="15" id="uu6-V6-GhX"/>
                                     <constraint firstAttribute="trailing" secondItem="pcm-EC-IX9" secondAttribute="trailing" constant="8" id="wVN-2L-97O"/>
+                                    <constraint firstAttribute="trailing" secondItem="G43-z8-Iiu" secondAttribute="trailing" constant="-12" id="whb-LK-LcJ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -309,5 +319,6 @@
         <image name="barrafina" width="480" height="480"/>
         <image name="cafeloisl" width="480" height="480"/>
         <image name="check" width="28" height="28"/>
+        <image name="cross" width="24" height="24"/>
     </resources>
 </document>

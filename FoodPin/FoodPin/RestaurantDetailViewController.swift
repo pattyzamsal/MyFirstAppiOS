@@ -42,6 +42,29 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         // to detect when is touched the map
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showMap))
         mapView.addGestureRecognizer(tapGestureRecognizer)
+        
+        // manage the map at footer of the table view
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString(restaurant.location, completionHandler: { placemarks, error in
+            if error != nil {
+                print(error as Any)
+                return
+            }
+            if let placemarks = placemarks {
+                // Get the first placemark 
+                let placemark = placemarks[0]
+                // Add annotation 
+                let annotation = MKPointAnnotation()
+                if let location = placemark.location {
+                    // Display the annotation 
+                    annotation.coordinate = location.coordinate
+                    self.mapView.addAnnotation(annotation)
+                    // Set the zoom level 
+                    let region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 250, 250)
+                    self.mapView.setRegion(region, animated: false)
+                }
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {

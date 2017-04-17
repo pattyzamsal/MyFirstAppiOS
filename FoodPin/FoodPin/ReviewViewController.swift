@@ -23,16 +23,30 @@ class ReviewViewController: UIViewController {
         blurEffectView.frame = view.bounds
         backgroundImageView.addSubview(blurEffectView)
         
-        // initial state of the container view (animation)
-        containerView.transform = CGAffineTransform.init(scaleX: 0, y: 0)
+        // initial state of the container view (animation = growing and spring)
+        //containerView.transform = CGAffineTransform.init(scaleX: 0, y: 0)
+        // initial state of the container view (animation = Slide-Down)
+        //containerView.transform = CGAffineTransform.init(translationX: 0, y: -1000)
+        
+        // combine transforms
+        let scaleTransform = CGAffineTransform.init(scaleX: 0, y: 0)
+        let translateTransform = CGAffineTransform.init(translationX: 0, y: -1000)
+        let combineTransform = scaleTransform.concatenating(translateTransform)
+        containerView.transform = combineTransform
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        // create the growing effect
+        // create the growing effect and the slide-down
         UIView.animate(withDuration: 0.3, animations: {
             // final state of the container view
             self.containerView.transform = CGAffineTransform.identity
         })
+        
+        // spring animation
+        /*UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.3,
+                       initialSpringVelocity: 0.2, options: .curveEaseInOut, animations: {
+                        self.containerView.transform = CGAffineTransform.identity
+        }, completion: nil)*/
     }
     
     override func didReceiveMemoryWarning() {

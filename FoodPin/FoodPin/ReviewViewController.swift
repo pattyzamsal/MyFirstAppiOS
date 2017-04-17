@@ -11,6 +11,7 @@ import UIKit
 class ReviewViewController: UIViewController {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,19 @@ class ReviewViewController: UIViewController {
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         backgroundImageView.addSubview(blurEffectView)
+        
+        // initial state of the container view (animation)
+        containerView.transform = CGAffineTransform.init(scaleX: 0, y: 0)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        // create the growing effect
+        UIView.animate(withDuration: 0.3, animations: {
+            // final state of the container view
+            self.containerView.transform = CGAffineTransform.identity
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

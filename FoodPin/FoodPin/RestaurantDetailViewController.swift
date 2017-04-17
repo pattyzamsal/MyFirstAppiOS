@@ -83,4 +83,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     }
     */
 
+    // unwind segue
+    @IBAction func close(segue:UIStoryboardSegue) {
+    }
 }

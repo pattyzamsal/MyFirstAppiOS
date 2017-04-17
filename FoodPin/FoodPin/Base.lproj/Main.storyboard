@@ -321,10 +321,10 @@
             </objects>
             <point key="canvasLocation" x="2615.1999999999998" y="89.505247376311857"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="NY9-uo-2u1">
             <objects>
-                <viewController id="7NL-fq-Wim" sceneMemberID="viewController">
+                <viewController id="7NL-fq-Wim" customClass="MapViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f7k-Tv-NIJ"/>
                         <viewControllerLayoutGuide type="bottom" id="NMA-zB-prp"/>
@@ -334,7 +334,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Gj3-Pl-4tY">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -345,6 +345,9 @@
                             <constraint firstItem="NMA-zB-prp" firstAttribute="top" secondItem="Gj3-Pl-4tY" secondAttribute="bottom" id="e6h-0W-3HB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Gj3-Pl-4tY" id="l1c-gO-Dwx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKT-eQ-itj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

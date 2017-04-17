@@ -306,6 +306,7 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="iAr-zz-Gqn" id="CZh-Ch-5ox"/>
                         <outlet property="containerView" destination="OPg-JW-JZ5" id="SLr-cR-6FY"/>
+                        <outlet property="restaurantImage" destination="tWB-xa-DfY" id="n00-Wj-9Na"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VC6-sS-baI" userLabel="First Responder" sceneMemberID="firstResponder"/>

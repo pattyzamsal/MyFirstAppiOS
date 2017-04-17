@@ -12,6 +12,9 @@ class ReviewViewController: UIViewController {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var restaurantImage: UIImageView!
+    
+    var restaurant: Restaurant!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,8 @@ class ReviewViewController: UIViewController {
         let translateTransform = CGAffineTransform.init(translationX: 0, y: -1000)
         let combineTransform = scaleTransform.concatenating(translateTransform)
         containerView.transform = combineTransform
+        
+        restaurantImage.image = UIImage(named: restaurant.image)
     }
 
     override func viewDidAppear(_ animated: Bool) {

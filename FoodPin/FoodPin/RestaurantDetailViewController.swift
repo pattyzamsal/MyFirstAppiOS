@@ -75,15 +75,19 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         return cell
     }
         
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "showReview" {
+            let destinationController = segue.destination as! ReviewViewController
+            destinationController.restaurant = restaurant
+        }
     }
-    */
+    
 
     // unwind segue
     @IBAction func close(segue:UIStoryboardSegue) {

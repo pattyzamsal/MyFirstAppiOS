@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import MapKit
 
 class RestaurantDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var restaurantImageView: UIImageView!
+    @IBOutlet weak var mapView: MKMapView!
     
     var restaurant: Restaurant!
     
@@ -36,11 +38,20 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         // enable self sizing cells
         tableView.estimatedRowHeight = 36.0
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        // to detect when is touched the map
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showMap))
+        mapView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // function to show the map view
+    func showMap() {
+        performSegue(withIdentifier: "showMap", sender: self)
     }
     
     // Table view Data Source

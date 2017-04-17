@@ -190,9 +190,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="wyt-YI-qal" id="jQW-uu-Ceh"/>
                         <outlet property="restaurantImageView" destination="uy0-vG-Pmp" id="YDn-aK-wGf"/>
                         <outlet property="tableView" destination="Gi0-0T-3he" id="9fj-pl-Vd0"/>
-                        <segue destination="7NL-fq-Wim" kind="show" id="4Wr-e9-N5j"/>
+                        <segue destination="7NL-fq-Wim" kind="show" identifier="showMap" id="4Wr-e9-N5j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmZ-Db-EAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -347,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKT-eQ-itj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2615.1999999999998" y="751.57421289355329"/>
+            <point key="canvasLocation" x="1868" y="862"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vf9-al-p4x">
